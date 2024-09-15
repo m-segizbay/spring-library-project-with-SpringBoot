@@ -1,6 +1,16 @@
 spring:
   application.name: spring-library-project
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/project1
+    username: madiyar
+    password: *
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgresPlusDialect
+        show_sql: true
 
-hello: Hello world!
+
 
 
